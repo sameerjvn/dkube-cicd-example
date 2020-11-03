@@ -22,7 +22,7 @@ component_store = kfp.components.ComponentStore(
 )
 
 # Create component factories
-add_op = component_store.load_component("my_add")
+add_op = component_store.load_component("my_add1")
 divide_op = component_store.load_component("my_divide")
 
 # Define pipeline
