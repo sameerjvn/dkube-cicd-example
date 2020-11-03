@@ -1,3 +1,10 @@
+Dockerfile: Dockerfile
+
+images:
+  path: images
+  images:
+    - name: my-image1
+    
 components:
   path: kubeflow/components
   components:
