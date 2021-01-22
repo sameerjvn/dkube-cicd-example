@@ -10,5 +10,5 @@ pipelines:
   path: kubeflow/pipelines
 
   pipelines:
-    - name: workflow1.py
+    - name: workflow.py
       run: true #
