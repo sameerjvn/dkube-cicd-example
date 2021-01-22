@@ -24,7 +24,7 @@ component_store = kfp.components.ComponentStore(
 # Create component factories
 add_op = component_store.load_component("my_add1")
 divide_op = component_store.load_component("my_divide")
-
+train_op = component_store.load_component("train")
 # Define pipeline
 @dsl.pipeline(
     name="A Simple CI pipeline",
@@ -46,3 +46,4 @@ def pipeline(
             y_value=divide_step.outputs["remainder"],
         )
         add_step2.set_display_name("Add quotient and remainder")
+    train_op(auth_token="")
