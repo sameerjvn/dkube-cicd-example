@@ -1,2 +1,14 @@
-conda_env: 
-  path: conda_env.yaml
+components: # defaults to all components if list is empty
+  path: kubeflow/components
+  components:
+    - name: my_add
+    - name: train
+    - name: my_divide
+      base_image: python:alpine #Used when Dockerfile is missing
+      
+pipelines:
+  path: kubeflow/pipelines
+
+  pipelines:
+    - name: workflow1.py
+      run: true #
