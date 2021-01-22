@@ -46,4 +46,4 @@ def pipeline(
             y_value=divide_step.outputs["remainder"],
         )
         add_step2.set_display_name("Add quotient and remainder")
-    train_op(auth_token="")
+    train_op(auth_token="", framework="tensorflow", version='2.0.0')
