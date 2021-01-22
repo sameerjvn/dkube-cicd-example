@@ -7,7 +7,7 @@ components: # defaults to all components if list is empty
       base_image: python:alpine #Used when Dockerfile is missing
       
 pipelines:
-  path: kubeflow/pipelines
+  path: kubeflow/pipeline
 
   pipelines:
     - name: workflow.py
