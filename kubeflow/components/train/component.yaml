@@ -15,7 +15,7 @@ metadata:
 inputs:
   - {name: auth_token,      type: String,   optional: false,
      description: 'Required. Dkube authentication token.'}
-  - {name: container,       type: Dict,     optional: true,    default: '{"image":"__IMAGE__"}',
+  - {name: container,       type: Dict,      default: '{"image":"__IMAGE__"}',
      description: 'Required. Container to use for training. Format: {"image":<url>, "username":<>, "password":<>}'}
   - {name: program,         type: String,   optional: true,     default: '',
      description: 'Optional. Program imported in Dkube to be run inside container. If not specified container should have entrypoint.'}
